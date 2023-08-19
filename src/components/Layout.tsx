@@ -10,7 +10,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Navbar />
-      <main className={`${rale.className}`}>{children}</main>
+      <main className={`${rale.className} w-full`}>{children}</main>
     </>
   );
 }
