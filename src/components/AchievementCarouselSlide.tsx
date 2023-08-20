@@ -12,9 +12,11 @@ const AchievementCarouselSlide = (props: Props) => {
       height={1000}
       width={1000}
       alt="Carousel"
-      containerClassName=""
-      heightClass="h-[400px]"
-    />
+      containerClassName="text-red-500 bg-red-500/20"
+      heightClass=" aspect-[18/9]"
+    >
+      hello
+    </ImageWithOverlay>
   );
 };
 

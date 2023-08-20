@@ -8,19 +8,19 @@ const Achievements = (props: Props) => {
   return (
     <section className="mb-4">
       <ImageWithOverlay
-        heightClass="h-56 md:h-64 lg:h-72"
+        heightClass="h-40 md:h-56 lg:h-64"
         containerClassName=""
         src="/Fitness_slide_1.jpg"
         width={800}
         height={800}
         alt="hello"
       >
-        <div className="flex h-56 md:h-64 lg:h-72 justify-center items-center text-background">
+        <div className="flex h-40 md:h-56 lg:h-64 justify-center items-center text-background">
           Achievements
         </div>
       </ImageWithOverlay>
       <div className="px-2">
-        <div className="bg-background p-0.5 -mt-10 shadow-md max-w-3xl m-auto ">
+        <div className="bg-background p-0.5 -mt-10 shadow-lg max-w-3xl m-auto ">
           <AchievementsCarousel />
         </div>
       </div>
