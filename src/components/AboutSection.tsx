@@ -15,7 +15,7 @@ type Props = {};
 
 const AboutSection = (props: Props) => {
   return (
-    <section className="w-full  flex flex-col md:flex-row-reverse  m-auto shadow-lg py-4">
+    <section className="w-full max-w-7xl   flex flex-col md:flex-row-reverse  m-auto shadow-lg py-4">
       <div className="image w-full  ">
         <ImageWithOverlay
           heightClass="h-[350px] md:h-[450px]"
