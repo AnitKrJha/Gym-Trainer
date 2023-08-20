@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 
-type Props = { content: string };
+type Props = { content?: string };
 
 const Marquees = ({ content }: Props) => {
   return (

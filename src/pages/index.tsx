@@ -6,6 +6,8 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import Marquees from "@/components/Marquee";
+import ImageWithOverlay from "@/components/ImageWithOverlay";
+import Testimonials from "@/components/Testimonials";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,17 +27,16 @@ export default function Home() {
         content="Ankit esi hi bhupendra ki photo mil jaye to 👑
       "
       /> */}
-      <Marquees
-        content="Ankit esi hi bhupendra ki photo mil jaye to 👑
-      "
-      />
+      <Marquees />
+      <AboutSection />
+      {/* <AboutSection />
       <AboutSection />
       <AboutSection />
       <AboutSection />
-      <AboutSection />
-      <AboutSection />
-      <AboutSection />
+      <AboutSection /> */}
       <Marquees content="" />
+      <Testimonials />
+      {/* </ImageWithOverlay> */}
     </div>
   );
 }

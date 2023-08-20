@@ -16,19 +16,21 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import useScrollPosition from "@/hooks/useScrollPosition";
+import { useRouter } from "next/router";
 const rale = Raleway({ subsets: ["latin"] });
 type Props = {};
 
 const Navbar = (props: Props) => {
   const srollPosition = useScrollPosition();
+  const router = useRouter();
 
   return (
     <Sheet>
       <div className=" w-full">
         <nav
           className={`fixed w-full z-10 top-0 flex justify-between py-4 px-3 md:px-6 items-center ${
-            srollPosition < 500
-              ? "bg-black text-background bg-opacity-75 backdrop-blur-sm border-b-background/30 border-b"
+            srollPosition < 10 && router.asPath === "/"
+              ? " text-background  backdrop-blur-sm border-b-background/30 border-b"
               : "bg-background shadow-md"
           }`}
         >

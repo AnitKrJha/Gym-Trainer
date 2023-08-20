@@ -12,6 +12,7 @@ const HeroSection = (props: Props) => {
         height={1000}
         width={1000}
         alt=""
+        priority
         className="object-cover w-screen h-screen object-center"
       />
       <div className=" text-white overlay top-0 left-0 bg-black w-full h-full flex items-center z-[1] absolute bg-opacity-50 justify-start">
