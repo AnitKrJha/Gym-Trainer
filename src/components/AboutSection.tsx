@@ -15,18 +15,19 @@ type Props = {};
 
 const AboutSection = (props: Props) => {
   return (
-    <section className="w-full max-w-7xl   flex flex-col md:flex-row-reverse  m-auto shadow-lg py-4">
+    <section className="w-full max-w-7xl   flex  flex-col md:flex-row-reverse  m-auto shadow-lg py-4">
       <div className="image w-full  ">
         <ImageWithOverlay
           heightClass="h-[350px] md:h-[450px]"
-          src="/Fitness_slide_1.jpg"
+          
+          src="/bpdwn.png"
           height={500}
           width={500}
           alt="image"
           className="w-full h-full object-cover object-center"
         >
-          <h2 className="about text-background grid place-items-center h-[350px] md:h-[450px]">
-            <span className="uppercase text-3xl">
+          <h2 className="about text-background grid  p-4 h-[350px] md:h-[450px]">
+            <span className="uppercase  text-2xl">
               <span className="text-primary font-bold uppercase ">About</span>{" "}
               <br />
               Bhupender

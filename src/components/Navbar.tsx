@@ -47,15 +47,15 @@ const Navbar = (props: Props) => {
           <nav
             className={`other-links ${rale.className} hidden md:block text-sm lg:text-base   grow`}
           >
-            <ul className="max-w-3xl mx-auto flex justify-around font-semibold tracking-wide">
+            <ul className="max-w-3xl   mx-auto flex justify-around font-semibold tracking-wide">
               <Link href="./journey">
-                <li>My Journey</li>
+                <li className=" hover:bg-orange-600 ps-1 pe-1">My Journey</li>
               </Link>
               <Link href="./shop">
-                <li>Shop</li>
+                <li className=" hover:bg-orange-600 ps-1 pe-1">Shop</li>
               </Link>
               <Link href="./contact">
-                <li>Contact</li>
+                <li className=" hover:bg-orange-600 ps-1 pe-1">Contact</li>
               </Link>
             </ul>
           </nav>
