@@ -16,9 +16,9 @@ const Testimonials = (props: Props) => {
         height={800}
         alt="hello"
       >
-        <div className="text-2xl md:text-3xl font-bold flex h-56 md:h-64 lg:h-72 justify-center items-center text-background">
+        <h2 className="text-2xl md:text-3xl font-bold flex h-56 md:h-64 lg:h-72 justify-center items-center text-background">
           What my <span className="text-primary px-2"> Clients</span> Say
-        </div>
+        </h2>
       </ImageWithOverlay>
       <TestimonialCarousel />
     </section>
