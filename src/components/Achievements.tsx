@@ -15,12 +15,12 @@ const Achievements = (props: Props) => {
         height={800}
         alt="hello"
       >
-        <div className="flex h-40 md:h-56 lg:h-64 justify-center items-center text-background">
-          Achievements
+        <div className=" text-xl md:text-3xl font-bold flex h-40 md:h-56 lg:h-64 justify-center items-center text-background">
+          Bhupender's <span className="text-primary px-2"> Achievements </span>
         </div>
       </ImageWithOverlay>
       <div className="px-2">
-        <div className="bg-background p-0.5 -mt-10 shadow-lg max-w-3xl m-auto ">
+        <div className="bg-background p-0.5 -mt-10 shadow-lg max-w-5xl m-auto ">
           <AchievementsCarousel />
         </div>
       </div>

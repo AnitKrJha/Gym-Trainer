@@ -1,6 +1,7 @@
 import React from "react";
 import ImageWithOverlay from "./ImageWithOverlay";
 import TestimonialCard from "./TestimonialCard";
+import TestimonialCarousel from "./TestimonialCarousel";
 
 type Props = {};
 
@@ -15,27 +16,11 @@ const Testimonials = (props: Props) => {
         height={800}
         alt="hello"
       >
-        <div className="flex h-56 md:h-64 lg:h-72 justify-center items-center text-background">
-          What Clients Say
+        <div className="text-2xl md:text-3xl font-bold flex h-56 md:h-64 lg:h-72 justify-center items-center text-background">
+          What my <span className="text-primary px-2"> Clients</span> Say
         </div>
       </ImageWithOverlay>
-      <div className="testimonials flex-col md:flex-row  max-w-3xl flex  w-fit mb-4  -mt-12 md:z-[1] bg-background shadow mx-auto">
-        <TestimonialCard
-          title="hello"
-          subtitle="bto"
-          comment=" fsf orjewif adfjkhio fl joherio oaifjoiewnsf soiern  fkjsehfwefioewbf sdfiosfef"
-        />
-        <TestimonialCard
-          title="hello"
-          subtitle="bto"
-          comment=" fsf sf s fs fsd f sf f  fsdfsfasf asf sdfwer af akf lksndf  flsiaerionfjb fkjadshiorjewif adfjkhio fl joherio oaifjoiewnsf soiern  fkjsehfwefioewbf sdfiosfef"
-        />
-        <TestimonialCard
-          title="hello"
-          subtitle="bto"
-          comment=" fsf sf s fs fsd f sf f  fsdfsfasf asf sdfwer af akf lksndf  flsiaerionfjb fkjadshiorjewif adfjkhio fl joherio oaifjoiewnsf soiern  fkjsehfwefioewbf sdfiosfef"
-        />
-      </div>
+      <TestimonialCarousel />
     </section>
   );
 };

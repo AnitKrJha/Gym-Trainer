@@ -8,7 +8,7 @@ type Props = {
 
 const TestimonialCard = (props: Props) => {
   return (
-    <div className="max-w-[400px] w-full h-[200px]     shadow-md py-2">
+    <div className="max-w-[400px] lg:min-w-[341px]  snap-start  min-h-[220px] md:min-h-[250px]     shadow-md py-2">
       <div className="content w-full px-5">
         <h3 className="text-primary text-sm text uppercase font-bold">
           {props.title}

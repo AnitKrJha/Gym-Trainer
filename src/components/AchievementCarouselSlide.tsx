@@ -12,7 +12,7 @@ const AchievementCarouselSlide = (props: Props) => {
       height={1000}
       width={1000}
       alt="Carousel"
-      containerClassName="text-red-500 bg-red-500/20"
+      containerClassName="text-red-500"
       heightClass=" aspect-[18/9]"
     >
       hello

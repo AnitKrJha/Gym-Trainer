@@ -56,4 +56,19 @@
   body {
     @apply bg-background text-foreground;
   }
+  .testimonials123::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+    height: 5px;
+  }
+
+  /* Style the scrollbar thumb */
+  .testimonials123::-webkit-scrollbar-thumb {
+    @apply bg-primary;
+    border-radius: 5px;
+  }
+
+  /* Hide the scrollbar arrows */
+  .testimonials123::-webkit-scrollbar-button {
+    display: none;
+  }
 }
