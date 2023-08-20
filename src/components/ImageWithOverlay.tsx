@@ -19,7 +19,7 @@ const ImageWithOverlay = ({
     <>
       <div
         className={cn(
-          "w-full bg-black/20 relative",
+          "w-full bg-black-500/20 relative",
           heightClass,
           containerClassName
         )}

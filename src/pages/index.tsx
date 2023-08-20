@@ -8,6 +8,7 @@ import AboutSection from "@/components/AboutSection";
 import Marquees from "@/components/Marquee";
 import ImageWithOverlay from "@/components/ImageWithOverlay";
 import Testimonials from "@/components/Testimonials";
+import Achievements from "@/components/Achievements";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function Home() {
       <AboutSection /> */}
       <Marquees content="" />
       <Testimonials />
+      <Achievements />
       {/* </ImageWithOverlay> */}
     </div>
   );
