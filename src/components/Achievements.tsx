@@ -10,7 +10,7 @@ const Achievements = (props: Props) => {
       <ImageWithOverlay
         heightClass="h-40 md:h-56 lg:h-64"
         containerClassName=""
-        src="/Fitness_slide_1.jpg"
+        src="/fitness.jpeg"
         width={800}
         height={800}
         alt="hello"
