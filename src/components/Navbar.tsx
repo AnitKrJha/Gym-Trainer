@@ -15,25 +15,49 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui/sheet";
+import useScrollPosition from "@/hooks/useScrollPosition";
 const rale = Raleway({ subsets: ["latin"] });
 type Props = {};
 
 const Navbar = (props: Props) => {
+  const srollPosition = useScrollPosition();
+
   return (
     <Sheet>
-      <div className="fixed w-full top-0 z-10">
-        <nav className="flex justify-between py-4 px-3 md:px-6 items-center bg-background">
+      <div className=" w-full">
+        <nav
+          className={`fixed w-full z-10 top-0 flex justify-between py-4 px-3 md:px-6 items-center ${
+            srollPosition < 500
+              ? "bg-black text-background bg-opacity-75 backdrop-blur-sm border-b-background/30 border-b"
+              : "bg-background shadow-md"
+          }`}
+        >
           <div className="hamburger md:hidden">
             <SheetTrigger asChild>
-              <Button variant={"ghost"} size={"icon"}>
+              <Button variant={"ghost"} size={"icon"} className="invert-0">
                 <HamburgerMenuIcon width={20} height={20} />
               </Button>
             </SheetTrigger>
           </div>
-          <div className={`logo ${rale.className} font-semibold sm:text-lg`}>
+          <div className={`logo ${rale.className} font-semibold sm:text-lg `}>
             <Link href="/">Bhupendra</Link>
           </div>
-          <div className="cta">
+          <nav
+            className={`other-links ${rale.className} hidden md:block text-sm lg:text-base   grow`}
+          >
+            <ul className="max-w-3xl mx-auto flex justify-around font-semibold tracking-wide">
+              <Link href="./journey">
+                <li>My Journey</li>
+              </Link>
+              <Link href="./shop">
+                <li>Shop</li>
+              </Link>
+              <Link href="./contact">
+                <li>Contact</li>
+              </Link>
+            </ul>
+          </nav>
+          <div className="cta ">
             <Link href="./shop">
               <Button
                 size={"sm"}
@@ -44,24 +68,11 @@ const Navbar = (props: Props) => {
             </Link>
           </div>
         </nav>
-        <nav
-          className={`other-links ${rale.className} hidden md:block bg-primary`}
-        >
-          <ul className="max-w-4xl mx-auto flex justify-around font-semibold tracking-wide">
-            <Link href="./journey">
-              <li>My Journey</li>
-            </Link>
-            <Link href="./shop">
-              <li>Shop</li>
-            </Link>
-            <Link href="./contact">
-              <li>Contact</li>
-            </Link>
-          </ul>
-        </nav>
+
         <SheetContent
           side={"top"}
           className={`${rale.className} font-semibold`}
+          overlayClassname={"bg-black bg-opacity-50"}
         >
           <SheetHeader>
             <SheetTitle>Navigate To?</SheetTitle>

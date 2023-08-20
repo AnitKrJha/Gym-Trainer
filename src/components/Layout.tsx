@@ -8,9 +8,9 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <>
+    <main className="w-full relative">
       <Navbar />
       <main className={`${rale.className} w-full`}>{children}</main>
-    </>
+    </main>
   );
 }

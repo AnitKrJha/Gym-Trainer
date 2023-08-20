@@ -13,22 +13,27 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* <ComingSoon /> */}
+      {/* <Marquees content="Ankit esi hi bhupendra" />
       <Marquees content="Ankit esi hi bhupendra" />
-      <Marquees content="Ankit esi hi bhupendra" />
-      <Marquees content="Ankit esi hi bhupendra" />
+      <Marquees content="Ankit esi hi bhupendra" /> */}
       <HeroSection />
-      <Marquees
+      {/* <Marquees
         content="Ankit esi hi bhupendra ki photo mil jaye to 👑
       "
       />
       <Marquees
         content="Ankit esi hi bhupendra ki photo mil jaye to 👑
       "
-      />
+      /> */}
       <Marquees
         content="Ankit esi hi bhupendra ki photo mil jaye to 👑
       "
       />
+      <AboutSection />
+      <AboutSection />
+      <AboutSection />
+      <AboutSection />
+      <AboutSection />
       <AboutSection />
       <Marquees content="" />
     </div>

@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "./ui/button";
+import SectionHeading from "./SectionHeading";
 
 type Props = {};
 
 const AboutSection = (props: Props) => {
   return (
-    <section className="w-full bg-foreground flex flex-col items-center text-background">
-      <h2 className="text-xl sm:text-2xl font-bold ">The Motivation</h2>
+    <section className="w-full  flex flex-col items-center ">
+      <SectionHeading align="center">About me</SectionHeading>
       <p className="text-center max-w-3xl px-5 md:px-9">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eveniet
         natus exercitationem officiis rem consequatur quas ratione culpa facilis
