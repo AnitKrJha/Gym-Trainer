@@ -1,0 +1,72 @@
+[
+  {
+    "date": "1960",
+    "title": "Birth",
+    "subtitle": "New Delhi, India",
+    "description": "Bhupender Dhawan was born in New Delhi in 1960.",
+    "imageSrc": "https://unsplash.it/500/200"
+  },
+  {
+    "date": "1980 - 1990",
+    "title": "Powerlifting Journey",
+    "subtitle": "New Delhi, India",
+    "description": "Bhupender Dhawan started his journey as a powerlifter, honing his skills and setting the foundation for his career.",
+    "imageSrc": "https://unsplash.it/600/300"
+  },
+  {
+    "date": "1995 - 2000",
+    "title": "Coaching Success",
+    "subtitle": "New Delhi, India",
+    "description": "Bhupender Dhawan achieved coaching success, guiding athletes to victory and recognition.",
+    "imageSrc": ""
+  },
+  {
+    "date": "2002 - 2006",
+    "title": "Leadership Studies",
+    "subtitle": "University of Delhi",
+    "description": "Bhupender pursued a degree in Leadership Studies, laying the groundwork for his future endeavors.",
+    "imageSrc": ""
+  },
+  {
+    "date": "2008 - 2010",
+    "title": "Founding Sports Academy",
+    "subtitle": "New Delhi, India",
+    "description": "Bhupender established a sports academy aimed at nurturing young talents and promoting sports at the grassroots level.",
+    "imageSrc": "https://unsplash.it/600/280"
+  },
+  {
+    "date": "2012",
+    "title": "Publication of Book",
+    "subtitle": "Title: 'Unleashing Strength'",
+    "description": "Bhupender authored a book that chronicled his experiences in the world of powerlifting and coaching, inspiring many aspiring athletes.",
+    "imageSrc": ""
+  },
+  {
+    "date": "2015 - 2020",
+    "title": "International Seminars",
+    "subtitle": "Motivational Speaker",
+    "description": "Bhupender conducted a series of international seminars, sharing his insights on leadership, sports psychology, and achieving peak performance.",
+    "imageSrc": ""
+  },
+  {
+    "date": "2018",
+    "title": "Humanitarian Efforts",
+    "subtitle": "Community Development",
+    "description": "Bhupender initiated community projects that utilized sports as a means to promote social development and well-being.",
+    "imageSrc": ""
+  },
+  {
+    "date": "2021",
+    "title": "Lifetime Achievement Award",
+    "subtitle": "Sports Excellence",
+    "description": "Bhupender Dhawan was honored with a prestigious lifetime achievement award for his outstanding contributions to sports and leadership.",
+    "imageSrc": ""
+  },
+  {
+    "date": "2023",
+    "title": "Continued Advocacy",
+    "subtitle": "Sports and Education",
+    "description": "Bhupender continues to advocate for the importance of sports in education, emphasizing holistic development and life skills.",
+    "imageSrc": ""
+  }
+]
