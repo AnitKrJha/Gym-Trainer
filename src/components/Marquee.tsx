@@ -13,7 +13,7 @@ const Marquees = ({ content }: Props) => {
       >
         <div className="flex items-center gap-2 py-4 bg-transparent  px-4 mx-8  md:mx-12 ">
           <h2 className="icon-or-number text-2xl sm:text-3xl md:text-4xl text-primary font-semibold">
-            100+
+            50+
           </h2>
           <div className="content text-2xl sm:text-3xl md:text-4xl text-muted-foreground font-medium">
             Awards
@@ -29,7 +29,7 @@ const Marquees = ({ content }: Props) => {
         </div>
         <div className="flex items-center gap-2 py-4 bg-transparent  px-4 mx-8 md:mx-12">
           <h2 className="icon-or-number text-2xl sm:text-3xl md:text-4xl text-primary font-semibold">
-            200+
+            10+
           </h2>
           <div className="content text-2xl sm:text-3xl md:text-4xl text-muted-foreground font-medium">
             Countries

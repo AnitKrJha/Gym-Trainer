@@ -1,6 +1,8 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 type Props = {};
 
@@ -8,7 +10,7 @@ const HeroSection = (props: Props) => {
   return (
     <div className=" min-h-[100dvh] min-w-screen  h-full w-full relative">
       <Image
-        src={"/fitness.jpeg"}
+        src={"/fitness.avif"}
         height={1000}
         width={1000}
         alt=""
@@ -22,8 +24,8 @@ const HeroSection = (props: Props) => {
             This World is not kind to everyone
           </h1>
           <div className="btn-grp my-3">
-            <Button>Pay Now</Button>
-            <Button variant={"outline"}>No later</Button>
+            <Link href="./shop"><Button className="gap-2">Go to shop <ArrowRightIcon/></Button></Link>
+            {/* <Button variant={"outline"}>No later</Button> */}
           </div>
         </div>
       </div>
