@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "achievementTitle": "Dronacharya Award",
+    "description": "Recipient of the prestigious Dronacharya Award for outstanding coaching in weightlifting.",
+    "imageSrc": "/achievement_image1.jpeg",
+    "date": "2022-05-15"
+  },
+  {
+    "id": 2,
+    "achievementTitle": "Hall of Fame Award",
+    "description": "Inducted into the Hall of Fame for exceptional contributions to powerlifting coaching.",
+    "imageSrc": "/achievement_image2.jpeg",
+    "date": "2023-02-28"
+  },
+  {
+    "id": 3,
+    "achievementTitle": "Powerlifting Coach",
+    "description": "Recognized as one of the foremost powerlifting coaches worldwide.",
+    "imageSrc": "/achievement_image3.jpeg",
+    "date": "2021-08-10"
+  },
+  {
+    "id": 4,
+    "achievementTitle": "International Coaching Summit",
+    "description": "Keynote speaker at the International Coaching Summit, sharing insights on strength training.",
+    "imageSrc": "/achievement_image1.jpeg",
+    "date": "2024-06-20"
+  },
+  {
+    "id": 5,
+    "achievementTitle": "Lifetime Achievement Award",
+    "description": "Received a Lifetime Achievement Award for his unparalleled dedication to coaching.",
+    "imageSrc": "/achievement_image2.jpeg",
+    "date": "2025-11-03"
+  }
+]

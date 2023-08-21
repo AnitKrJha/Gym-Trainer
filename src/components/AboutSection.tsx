@@ -19,14 +19,14 @@ const AboutSection = (props: Props) => {
       <div className="image w-full  ">
         <ImageWithOverlay
           heightClass="h-[350px] md:h-[450px]"
-          
+          containerClassName="bg-gradient-to-t from-black/70 to-transparent"
           src="/bpdwn.png"
           height={500}
           width={500}
           alt="image"
           className="w-full h-full object-cover object-center"
         >
-          <h2 className="about text-background grid  p-4 h-[350px] md:h-[450px]">
+          <h2 className="about text-background grid place-items-end p-4 h-[350px] md:h-[450px]">
             <span className="uppercase  text-2xl">
               <span className="text-primary font-bold uppercase ">About</span>{" "}
               <br />

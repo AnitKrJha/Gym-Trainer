@@ -3,20 +3,28 @@ import ImageWithOverlay from "./ImageWithOverlay";
 
 type Props = {
   imageSrc: string;
+  achievementTitle: string;
+  description: string;
+  date?: string;
 };
 
 const AchievementCarouselSlide = (props: Props) => {
   return (
-    <ImageWithOverlay
-      src={"/achievement_image1.jpeg"}
-      height={1000}
-      width={1000}
-      alt="Carousel"
-      containerClassName="text-red-500"
-      heightClass=" aspect-[18/9]"
-    >
-    <span className="bg-black p-3 text-center w-full	"> hello</span>  
-  </ImageWithOverlay>
+    <div>
+      <ImageWithOverlay
+        src={props.imageSrc}
+        height={1000}
+        width={1000}
+        alt="Carousel"
+        containerClassName="text-red-500 "
+        heightClass="aspect-[15/9] md:aspect-[17/9]"
+      ></ImageWithOverlay>
+      <h2 className="text-lg md:text-2xl font-bold">
+        {props.achievementTitle}
+      </h2>
+      <p>{props.description}</p>
+      <p>Date: {props.date}</p> {/* New line to display the date */}
+    </div>
   );
 };
 

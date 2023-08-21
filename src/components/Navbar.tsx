@@ -42,7 +42,7 @@ const Navbar = (props: Props) => {
             </SheetTrigger>
           </div>
           <div className={`logo ${rale.className} font-semibold sm:text-lg `}>
-            <Link href="/">Bhupendra</Link>
+            <Link href="/">Bhupender</Link>
           </div>
           <nav
             className={`other-links ${rale.className} hidden md:block text-sm lg:text-base   grow`}
