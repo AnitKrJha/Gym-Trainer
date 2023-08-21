@@ -1,0 +1,10 @@
+{
+  "address": "1234 Elm Street Suite 567 Cityville, Stateington ZIP Code:12345 Country: United States",
+  "privacyAndTrademarkLine": "© 2023 Bhupender. All rights reserved. ™️ Trademarks owned by their respective holders.",
+  "footerLinks": [
+    { "title": "Home", "link": "/" },
+    { "title": "My Journey", "link": "./journey" },
+    { "title": "Shop", "link": "./shop" },
+    { "title": "Contact Us", "link": "./contact" }
+  ]
+}
