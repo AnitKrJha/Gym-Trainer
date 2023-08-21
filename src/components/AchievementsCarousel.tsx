@@ -12,18 +12,19 @@ const AchievementsCarousel = (props: Props) => {
     <div>
       <Swiper
         spaceBetween={0}
+        centeredSlides={false}
         autoplay={{
-          delay: 2000,
-          stopOnLastSlide: false,
+          delay: 3000,
+          disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        grabCursor
         className="w-full relative"
       >
         {achievemetData.map((achievement) => (
           <SwiperSlide key={achievement.id}>
             <AchievementCarouselSlide
               key={achievement.id}
+              id={achievement.id}
               imageSrc={achievement.imageSrc}
               achievementTitle={achievement.achievementTitle}
               description={achievement.description}

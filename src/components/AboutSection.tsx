@@ -15,8 +15,8 @@ type Props = {};
 
 const AboutSection = (props: Props) => {
   return (
-    <section className="w-full max-w-7xl   flex  flex-col md:flex-row-reverse  m-auto shadow-lg py-4">
-      <div className="image w-full  ">
+    <section className="w-full max-w-6xl   flex  flex-col md:flex-row-reverse  m-auto shadow-lg mb-4">
+      <div className="image w-full basis-1/2 ">
         <ImageWithOverlay
           heightClass="h-[350px] md:h-[450px]"
           containerClassName="bg-gradient-to-t from-black/70 to-transparent"
@@ -24,7 +24,7 @@ const AboutSection = (props: Props) => {
           height={500}
           width={500}
           alt="image"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full sm:object-contain object-cover md:object-cover object-center"
         >
           <h2 className="about text-background grid place-items-end p-4 h-[350px] md:h-[450px]">
             <span className="uppercase  text-2xl">
@@ -35,7 +35,7 @@ const AboutSection = (props: Props) => {
           </h2>
         </ImageWithOverlay>
       </div>
-      <div className="text-muted-foreground text-sm px-8">
+      <div className="text-muted-foreground text-sm px-8 basis-1/2">
         <SectionHeading align="left" className="md:text-xl">
           Bhupender Dhawan /{" "}
           <span className="text-muted-foreground">The coach</span>

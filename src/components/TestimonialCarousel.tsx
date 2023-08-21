@@ -18,8 +18,6 @@ const TestimonialCarousel = (props: Props) => {
             delay: 3000,
             disableOnInteraction: false,
           }}
-          navigation
-          pagination={{ clickable: true }}
           breakpoints={{
             520: {
               slidesPerView: 2,
@@ -28,7 +26,7 @@ const TestimonialCarousel = (props: Props) => {
               slidesPerView: 3,
             },
           }}
-          modules={[Autoplay, Navigation, Pagination]}
+          modules={[Autoplay]}
         >
           <div className="h-8  absolute bottom-0 left-0 z-[1] flex gap-2">
             <SwiperBtnPrev className={"w-[35px] bg-primary  hover:invert"} />
@@ -37,7 +35,7 @@ const TestimonialCarousel = (props: Props) => {
             <SwiperBtnNext className={"w-[35px] bg-primary hover:invert"} />
           </div>
           {testimonialData.map((t) => (
-            <SwiperSlide>
+            <SwiperSlide key={t.id}>
               <TestimonialCard
                 title={t.title}
                 subtitle={t.subtitle}

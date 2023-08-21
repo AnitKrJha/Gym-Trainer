@@ -6,14 +6,7 @@ import Marquee from "react-fast-marquee";
 type Props = {};
 
 const Shop = (props: Props) => {
-  return (
-    <div className="w-full grid h-screen place-items-center">
-      <div>
-        Shop Page
-        <Marquees content="Comming soon Shop 🕧🕧" />
-      </div>
-    </div>
-  );
+  return <Marquees content="Comming soon Shop 🕧🕧" />;
 };
 
 export default Shop;

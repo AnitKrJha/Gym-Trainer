@@ -35,9 +35,9 @@ export default function Home() {
       <AboutSection />
       <AboutSection />
       <AboutSection /> */}
-      <Marquees content="" />
-      <Testimonials />
       <Achievements />
+      <Marquees />
+      <Testimonials />
       {/* </ImageWithOverlay> */}
     </div>
   );

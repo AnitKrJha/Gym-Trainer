@@ -6,6 +6,7 @@ type Props = {
   achievementTitle: string;
   description: string;
   date?: string;
+  id: number;
 };
 
 const AchievementCarouselSlide = (props: Props) => {
@@ -16,14 +17,29 @@ const AchievementCarouselSlide = (props: Props) => {
         height={1000}
         width={1000}
         alt="Carousel"
-        containerClassName="text-red-500 "
+        containerClassName="bg-gradient-to-tl from-black/70 to-transparent"
         heightClass="aspect-[15/9] md:aspect-[17/9]"
-      ></ImageWithOverlay>
-      <h2 className="text-lg md:text-2xl font-bold">
-        {props.achievementTitle}
-      </h2>
-      <p>{props.description}</p>
-      <p>Date: {props.date}</p> {/* New line to display the date */}
+      >
+        <h2 className="about text-background grid place-items-end p-4 aspect-[15/9] md:aspect-[17/9]">
+          <span className="uppercase  text-3xl md:text-5xl">
+            <span className="text-primary font-bold uppercase">
+              {props.id} .
+            </span>
+          </span>
+        </h2>
+      </ImageWithOverlay>
+      <div className="pl-4 py-4">
+        <h2 className="text-lg md:text-2xl font-bold text-primary">
+          {props.achievementTitle}
+        </h2>
+        <p className="text-base text-muted-foreground  font-medium md:text-lg">
+          {props.description}
+        </p>
+        <p className="text-sm text-muted-foreground italic font-medium md:text-base">
+          Date: {props.date}
+        </p>{" "}
+        {/* New line to display the date */}
+      </div>
     </div>
   );
 };

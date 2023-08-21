@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import {
@@ -23,9 +23,9 @@ type Props = {};
 const Navbar = (props: Props) => {
   const srollPosition = useScrollPosition();
   const router = useRouter();
-
+  const [open, setOpen] = useState(false);
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <div className=" w-full">
         <nav
           className={`fixed w-full z-10 top-0 flex justify-between py-4 px-3 md:px-6 items-center ${
@@ -41,7 +41,9 @@ const Navbar = (props: Props) => {
               </Button>
             </SheetTrigger>
           </div>
-          <div className={`logo ${rale.className} font-semibold sm:text-lg `}>
+          <div
+            className={`logo ${rale.className} font-semibold sm:text-lg text-primary`}
+          >
             <Link href="/">Bhupender</Link>
           </div>
           <nav
@@ -49,13 +51,13 @@ const Navbar = (props: Props) => {
           >
             <ul className="max-w-3xl   mx-auto flex justify-around font-semibold tracking-wide">
               <Link href="./journey">
-                <li className=" hover:bg-orange-600 ps-1 pe-1">My Journey</li>
+                <li className=" hover:underline">My Journey</li>
               </Link>
               <Link href="./shop">
-                <li className=" hover:bg-orange-600 ps-1 pe-1">Shop</li>
+                <li className=" hover:underline">Shop</li>
               </Link>
               <Link href="./contact">
-                <li className=" hover:bg-orange-600 ps-1 pe-1">Contact</li>
+                <li className=" hover:underline">Contact</li>
               </Link>
             </ul>
           </nav>
@@ -77,23 +79,23 @@ const Navbar = (props: Props) => {
           overlayClassname={"bg-black bg-opacity-50"}
         >
           <SheetHeader>
-            <SheetTitle>Navigate To?</SheetTitle>
+            <SheetTitle>Navigate To</SheetTitle>
             <SheetDescription
               asChild
-              className="text-foreground max-w-4xl mx-auto flex flex-col justify-around gap-2 w-full"
+              className="text-white max-w-4xl mx-auto flex flex-col justify-around gap-2 w-full"
             >
               <ul>
-                <Link href="./journey">
+                <Link href="./journey" onClick={() => setOpen(false)}>
                   <li className="py-3 w-full bg-primary flex justify-center items-center gap-3">
                     My Journey <ArrowRightIcon />
                   </li>
                 </Link>
-                <Link href="./shop">
+                <Link href="./shop" onClick={() => setOpen(false)}>
                   <li className="py-3 w-full bg-primary flex justify-center items-center gap-3">
                     Shop <ArrowRightIcon />
                   </li>
                 </Link>
-                <Link href={"./contact"}>
+                <Link href={"./contact"} onClick={() => setOpen(false)}>
                   <li className="py-3 w-full bg-primary flex justify-center items-center gap-3">
                     Contact Us <ArrowRightIcon />
                   </li>
