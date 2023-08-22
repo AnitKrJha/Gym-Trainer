@@ -67,8 +67,9 @@ type footerSocialProps = {
 
 const FooterSocial = (props: footerSocialProps) => {
   return (
-    <Link target="_blank"
-    rel="no-refferer"
+    <Link
+      target="_blank"
+      rel="no-refferer"
       href={props.url}
       className="flex gap-2 hover:underline hover:scale-105 duration-200 items-center text-muted"
     >
