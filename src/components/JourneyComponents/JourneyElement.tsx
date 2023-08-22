@@ -28,7 +28,7 @@ const JourneyElement = (props: Props) => {
             alt="Coaching Success"
             width={500}
             height={250}
-            className="w-full h-40 object-cover object-center"
+            className="w-full  object-cover object-center"
           />
         </div>
       )}
