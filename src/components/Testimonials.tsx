@@ -11,7 +11,7 @@ const Testimonials = (props: Props) => {
       <ImageWithOverlay
         heightClass="h-56 md:h-64 lg:h-72"
         containerClassName=""
-        src="/fitness.jpeg"
+        src="/bg-hero.jpg"
         width={800}
         height={800}
         alt="hello"

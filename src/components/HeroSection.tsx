@@ -8,7 +8,7 @@ const HeroSection = (props: Props) => {
   return (
     <div className=" min-h-[100dvh] min-w-screen  h-full w-full relative">
       <Image
-        src={"/fitness.jpeg"}
+        src={"/bg-hero.jpg"}
         height={1000}
         width={1000}
         alt=""

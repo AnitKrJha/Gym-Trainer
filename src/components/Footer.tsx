@@ -23,10 +23,10 @@ const Footer = (props: Props) => {
             Bhupender
           </div>
           <div className="links flex gap-4 ">
-            <FooterSocial name="instagram" url="#">
+            <FooterSocial name="instagram" url={footerData.instagram}>
               <InstagramLogoIcon />
             </FooterSocial>
-            <FooterSocial name="twitter" url="#">
+            <FooterSocial name="twitter" url={footerData.twitter}>
               <TwitterLogoIcon />
             </FooterSocial>
           </div>
@@ -68,6 +68,8 @@ type footerSocialProps = {
 const FooterSocial = (props: footerSocialProps) => {
   return (
     <Link
+      target="_blank"
+      rel="no-refferer"
       href={props.url}
       className="flex gap-2 hover:underline hover:scale-105 duration-200 items-center text-muted"
     >
